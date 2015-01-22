@@ -1,6 +1,15 @@
 David Ayeke, ayekedavidr@wustl.edu
 CSE 332 Lab 0: Basic C++ Program Structure and Data Movement
 
+Program Parses rank suit pairs to print the full card name
+Ex
+7C  => Seven of Clubs
+kS  => King of Spades
+10D => 10 of Diamonds
+AH  => Ace of Hearts
+
+
+
 //Compilation Errors and Warnings
 There were none.
 //
