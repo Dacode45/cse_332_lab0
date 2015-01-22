@@ -8,14 +8,14 @@ Definitions of playing cards and functions to use them
 
 
 const int expected_argument_count = 2;
-enum command_line_argument:int{pragram_name, file_name};
+enum  command_line_argument{pragram_name, file_name};
 
 struct Card{
-	enum  SUIT:int{clubs, diamonds, hearts, spades};
+	enum  SUIT{clubs, diamonds, hearts, spades};
 	//map { "Clubs", "Diamonds", "Hearts", "Spades" };
 	static const char* suitMap[4]; 
 	//made the underlying type an int so that I could compare two cards rank easilly
-	enum  RANK:int{two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace}; 
+	enum  RANK{two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace}; 
 	// map Ranks to string
 	static const char* rankMap[13];
 	SUIT suit;
