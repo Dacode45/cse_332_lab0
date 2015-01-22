@@ -4,6 +4,9 @@
 #include "stdafx.h"
 #include "cards.h"
 
+#include<vector>
+#include <iostream>
+
 using namespace std;
 
 

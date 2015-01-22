@@ -7,6 +7,10 @@ Implementation of definitions from cards.h
 #include "stdafx.h"
 #include "cards.h"
 
+
+#include <fstream>
+#include <iostream>
+
 //Initializing mapping
 const char* Card::suitMap[4] = { "Clubs", "Diamonds", "Hearts", "Spades" };
 const char* Card::rankMap[13] = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };

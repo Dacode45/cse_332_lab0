@@ -6,6 +6,7 @@ Definitions of playing cards and functions to use them
 #ifndef CARDS_H
 #define CARDS_H
 
+#include<vector>
 
 const int expected_argument_count = 2;
 enum  command_line_argument{pragram_name, file_name};
