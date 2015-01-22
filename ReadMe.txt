@@ -27,4 +27,23 @@ I have designed this program to only parse rank suite pairs.
 rank and suite must be together. that is why k,,D will not work and ,,,,kD will.
 
 Extra Credit.
-ayekedavidr@shell
+ayekedavidr@shell ~
+Makefile would not work because I used cpp 11 features like scoped enums.
+So I compiled with the command g++ -std=c++11 -pedantic -Wall -o lab0.out cards.cpp cse_332_lab0.cpp
+
+Both the in.txt and in_ws.txt ran fine.
+The in_format.txt ran infinitely. It turns out linux does not provide an
+endoffile bit in c++ and I have a while loop that checks for when this bit 
+occurs and ends reading of the file once it does. 
+I had to change my loop from while(!in.eof())
+to 
+in >> std::ws;
+char rankChar
+while(in.get(rankChar))
+	if(in.eof())
+		break;
+
+This fixed everything and in_format.txt ran the same as it did on windows.
+I am not quite sure why in.txt and in_ws.txt ran despite this issue. It is
+possible that my use of in.unget() whenever the file is improperly formatted
+was at play. 
